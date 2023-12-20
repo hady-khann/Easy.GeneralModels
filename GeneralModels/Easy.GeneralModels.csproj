@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<PackageId>Easy.GeneralModels</PackageId>
+		<Title>Easy.GeneralModels</Title>
+		<Product>Easy.GeneralModels</Product>
+		<PackageOutputPath>../nuget</PackageOutputPath>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>$([System.DateTime]::Now.ToString(yyyy.MM.dd.HHmm))</Version>
+		<Authors>HK</Authors>
+		<Company>EasyTools</Company>
+		<RepositoryUrl>https://github.com/hady-khann/Easy.GeneralModels</RepositoryUrl>
+		<PackageTags>GeneralModels</PackageTags>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Description>GeneralModels Provides General Results And Paging Model</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+
+</Project>
